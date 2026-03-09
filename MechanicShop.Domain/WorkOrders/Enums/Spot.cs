@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MechanicShop.Domain.WorkOrders.Enum;
+namespace MechanicShop.Domain.WorkOrders.Enums;
 
 public enum Spot
 {

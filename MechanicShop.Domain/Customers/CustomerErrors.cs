@@ -18,9 +18,9 @@ public static class CustomerErrors
     public static Error CustomerExists =>
         Error.Conflict("Customer_Email_Exists", "A customer with this email already exists.");
 
-    public static readonly Error InvalidPhoneNumber =
+    public static  Error InvalidPhoneNumber =>
         Error.Conflict("Customer.InvalidPhoneNumber", "Phone number must be 7–15 digits and may start with '+'.");
 
-    public static readonly Error CannotDeleteCustomerWithWorkOrders =
+    public static Error CannotDeleteCustomerWithWorkOrders =>
         Error.Conflict("Customer.CannotDelete", "Customer cannot be deleted due to existing work orders.");
 }

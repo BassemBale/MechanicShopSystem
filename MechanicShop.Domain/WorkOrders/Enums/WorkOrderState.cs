@@ -1,9 +1,9 @@
-﻿namespace MechanicShop.Domain.WorkOrders.Enum;
+﻿namespace MechanicShop.Domain.WorkOrders.Enums;
 
 public enum WorkOrderState
 {
     Scheduled,
     InProgress,
     Completed,
-    Canceled
+    Cancelled
 }

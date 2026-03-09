@@ -1,6 +1,4 @@
-﻿
-
-namespace MechanicShop.Domain.RepairTasks.Enum;
+﻿namespace MechanicShop.Domain.RepairTasks.Enums;
 
 public enum RepairDurationInMinutes
 {
