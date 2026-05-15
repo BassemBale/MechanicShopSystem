@@ -10,7 +10,10 @@ using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace MechanicShop.Application.Features.Customers.Commands.RemoveCustomer;
 
-public sealed class RemoveCustomerCommandHandler(IAppDbContext context, ILogger<RemoveCustomerCommandHandler> logger, HybridCache cache)
+public sealed class RemoveCustomerCommandHandler(
+    IAppDbContext context,
+    ILogger<RemoveCustomerCommandHandler> logger,
+    HybridCache cache)
     :IRequestHandler<RemoveCustomerCommand, Result<Deleted>>
 {
     private readonly IAppDbContext _context = context;
